@@ -1,0 +1,103 @@
+
+/* AI-assisted CSS: Skill Swap homepage styling. */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #263248;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #233b72;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background-color: #4263a5;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+#home {
+    text-align: center;
+    padding: 60px 30px;
+}
+
+#home h2 {
+    font-size: 32px;
+    color: #233b72;
+}
+
+h2 {
+    color: #233b72;
+}
+
+footer {
+    background-color: #233b72;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        gap: 8px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #home {
+        padding: 35px 20px;
+    }
+}
