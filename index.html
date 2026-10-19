@@ -9,37 +9,117 @@
 </head>
 <body>
 
-    <!-- AI-assisted code: Semantic homepage structure. -->
+    <!-- AI-assisted homepage structure and navigation -->
     <header>
         <h1>Skill Swap</h1>
         <p>Learn Something New. Share What You Know.</p>
 
-        <!-- Navigation links will be added in feature branch 2. -->
         <nav aria-label="Main navigation">
-            <p>Navigation coming soon!</p>
+            <a href="#home">Home</a>
+            <a href="#skills">Browse Skills</a>
+            <a href="#offer">Offer Skills</a>
+            <a href="#about">About</a>
         </nav>
     </header>
 
     <main>
-        <!-- Homepage hero section -->
         <section id="home">
             <h2>Welcome to Skill Swap!</h2>
             <p>
-                Skill Swap connects people who want to learn
-                new skills with people who are willing to
-                teach them.
+                Skill Swap connects people who want to
+                learn new skills with people willing
+                to teach them.
             </p>
             <p>
                 Whether you want to learn programming,
                 photography, cooking, or fitness,
                 Skill Swap has something for everyone.
             </p>
+            <a class="browse-button" href="#skills">
+                Browse Skills
+            </a>
         </section>
 
-        <!-- Skill listings will be added in feature branch 3. -->
         <section id="skills">
             <h2>Explore Available Skills</h2>
-            <p>Our skill offerings will be available soon!</p>
+            <p>
+                Browse our available skills and find
+                something new to learn!
+            </p>
+
+            <!-- AI-assisted skill cards for Sprint 1 -->
+            <div class="skill-container">
+
+                <article class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>
+                        Learn the basics of HTML,
+                        CSS, and JavaScript.
+                    </p>
+                    <p><strong>Instructor:</strong> Alex Johnson</p>
+                    <p><strong>Price:</strong> $25/hour</p>
+                    <button type="button" class="skill-button"
+                        data-skill="Web Development"
+                        data-details="Learn how to build websites using HTML, CSS, and JavaScript.">
+                        Learn More
+                    </button>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Photography</h3>
+                    <p>
+                        Learn how to take better pictures
+                        and edit your photos.
+                    </p>
+                    <p><strong>Instructor:</strong> Sarah Miller</p>
+                    <p><strong>Price:</strong> $20/hour</p>
+                    <button type="button" class="skill-button"
+                        data-skill="Photography"
+                        data-details="Learn camera settings, lighting, composition, and photo editing.">
+                        Learn More
+                    </button>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Cooking Basics</h3>
+                    <p>
+                        Learn how to prepare simple,
+                        delicious meals at home.
+                    </p>
+                    <p><strong>Instructor:</strong> Michael Davis</p>
+                    <p><strong>Price:</strong> $15/hour</p>
+                    <button type="button" class="skill-button"
+                        data-skill="Cooking Basics"
+                        data-details="Learn kitchen safety, meal preparation, and basic cooking techniques.">
+                        Learn More
+                    </button>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Strength Training</h3>
+                    <p>
+                        Learn proper lifting techniques
+                        and how to build strength.
+                    </p>
+                    <p><strong>Instructor:</strong> Chris Wilson</p>
+                    <p><strong>Price:</strong> $30/hour</p>
+                    <button type="button" class="skill-button"
+                        data-skill="Strength Training"
+                        data-details="Learn proper exercise form, workout planning, and strength training fundamentals.">
+                        Learn More
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="offer">
+            <h2>Share Your Skills</h2>
+            <p>
+                Have a skill you would like to teach?
+                Skill Swap gives you the opportunity
+                to share your knowledge with others.
+            </p>
         </section>
 
         <section id="about">
@@ -55,6 +135,13 @@
     <footer>
         <p>&copy; 2026 Skill Swap. All rights reserved.</p>
     </footer>
+
+    <!-- Accessible popup for skill information -->
+    <dialog id="skill-dialog">
+        <h2 id="dialog-title"></h2>
+        <p id="dialog-description"></p>
+        <button type="button" id="close-dialog">Close</button>
+    </dialog>
 
     <script src="script.js"></script>
 </body>
